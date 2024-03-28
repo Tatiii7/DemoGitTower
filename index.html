@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo</title>
-</head>
+    <head>
+        
+        <!-- Impirmir caracteres especiales como la ñ -->   
+        <meta charset="UTF-8">
+        <!-- Adaptación a las resoluciones de pantalla -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Demo</title>
+        <!-- Declaracion de estilos -->
+        <link rel="stylesheet" type="text/css" href="jquery/jquery.mobile-1.3.0.css">
+    
+        <!-- Declaracion de scrips jquery y adicionales -->
+        <script type="text/javascript" charset="utf-8" src="jquery/jquery.js"></script>
+        <script type="text/javascript" charset="utf-8" src="jquery/jquery.mobile-1.3.0.js"></script>
+        <style>
+            .contenedor {
+                background-image: url(img/logo.jpg);
+                background-repeat: no-repeat;
+                background-position: bottom;
+                background-size: 30%;
+                background-attachment: fixed;
+            }
+            .btn-a {
+                padding: 1px 250px;
+            }
+            .opaci {
+                width: 1330px;
+                height: 300px;       
+            }
+            .box {
+                
+                 padding: 1px;
+                 background-color: rgba(255, 255, 255, 0.8);
+                 border-radius: 10px;
+             }
+        
+        </style>
+    
+    </head>
 <body>
-    <h1>UNIVERSIDAD DE SANTANDER</h1>
+
+    <!-- PAGINA DE INICIO -->
+    <div data-role="page" id="inicio" class="contenedor">
+      
+        
+    <div data-role="header" data-theme="b">
+        <h1>DEMOGITTOWER</h1>
+            <a href="#https://taaerpaj.000webhostapp.com/Actividad_1/copia%20de%20index.html" data-role="button" data-icon="home" data-iconpos="notext"></a>
+    </div><!-- /header -->
+
+    <div data-role="content" style="background: url(img/udes.jpg) no-repeat center ;" class="opaci"> 
+        <br>
+        <div data-role="controlgroup" class="btn-a">
+            <a href="#menuchicostecno" data-role="button" data-icon="arrow-r" data-iconpos="right">Actores de Tecnología</a>
+            <a href="#menumafiastecno" data-role="button" data-icon="arrow-r" data-iconpos="right">Mafias de Tecnología</a>
+            <a href="#menutecnologias" data-role="button" data-icon="arrow-r" data-iconpos="right">Tecnologías Siglo XXI</a>
+            <a href="#menutecnologias" data-role="button" data-icon="arrow-r" data-iconpos="right">Inicios de la Tecnología</a>
+        </div>
+        <br>
+        <div align="center" class="box">
+            
+        <p>Desarrolladora: <b>Tatiana Espinosa Rojas</b>
+            <br><i>Estudiante de Ingeniería de Software - UDES
+            <br>Segundo Semestre Académico
+            <br></i></p>
+            
+        </div>
+    </div><!-- /content -->
+
+    <div data-role="footer" data-theme="b">
+        <h4>UNIVERSIDAD DE SANTANDER</h4>
+
+
+    </div><!-- /footer -->
+</div><!-- /page -->
+<!-- FIN PAGINA DE INICIO -->
 </body>
 </html>
